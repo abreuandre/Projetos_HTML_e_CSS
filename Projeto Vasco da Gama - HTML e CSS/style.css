@@ -1,11 +1,13 @@
 body {
     font-family: 'Markazi Text', serif;
     font-size: 23px;
+    width: auto;
 }
 
 header {
     background: #BBBBBB;
     padding: 20px 0;
+    width: auto;
 }
 
 .caixa {
@@ -16,7 +18,7 @@ header {
 
 nav {
     position: absolute;
-    top: 110px;
+    top: 70px;
     right: 0;
 }
 
@@ -38,7 +40,13 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.produtos li {
+.produtos1 {
+    width: 1007px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos2 {
     display: inline-block;
     text-align: center;
     width: 30%;
@@ -51,23 +59,23 @@ nav a:hover {
     border-radius: 10px;
 }
 
-.produtos li:hover {
+.produtos2:hover {
     border-color: #C78C19;
 }
 
-.produtos li:active {
+.produtos2:active {
     border-color: #088C19;
 }
 
-.produtos li:hover h2 {
+.produtos2:hover h2 {
     font-size: 40px;
 }
 
-.produtos {
-    width: 1007px;
+/*.produtos {
+    width: 940px;
     margin: 0 auto;
     padding: 50px 0;
-}
+}*/
 
 .produtos h2 {
     font-size: 30px;
@@ -75,20 +83,20 @@ nav a:hover {
 }
 
 .produto-descricao {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 #socio2 {
-    width: 200px;
+    width: 75%;
 }
 
 #prod {
-    width: 275px;
+    width: 100%;
 }
 
 #tour {
-    width: 260px;
-    height: 335px;
+    width: 100%;
+    height: 80%;
 }
 
 footer {
@@ -107,9 +115,8 @@ footer {
     margin: 20px 0 0;
 }
 
-main {
-    width: 940px;
-    margin: 0 auto;
+.main-contato {
+ margin: 5% 0% 0% 30%;
 }
 
 form {
@@ -242,8 +249,71 @@ td, th {
 }
 
 @media screen and (max-width: 480px) {
-    .caixa, .principal, .conteudo-titulos, .mapa-conteudo, .video {
+
+    body {
+        width: 480px;
+    }
+
+    .caixa {
         width: auto;
+    }
+
+    nav a:hover {
+        color: #C78C19;
+        text-decoration: underline;
+    }
+
+    .produtos1 {
+        width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    }
+
+    .produtos2 {
+    display: inline-block;
+    text-align: center;
+    width: 29%;
+    height: 320px;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    }
+
+    .produtos2:hover h2 {
+        font-size: 35px;
+    }
+
+    .produtos2:hover {
+        border-color: #C78C19;
+    }
+    
+    .produtos2:active {
+        border-color: #088C19;
+    }
+
+    .produto-descricao {
+        font-size: 18px;
+    }
+    
+    #tour {
+        width: 100%;
+        height: 40%;
+    }
+
+    .main-contato {
+        margin: 5% 0% 0% 5%;
+       }
+
+    .formulario {
+        margin: 40px 0px 0px 60px;
+    }
+
+
+    table {
+        margin: 40px 0 40px 60px;
     }
 
     h1 {
@@ -252,9 +322,5 @@ td, th {
 
     nav {
         position: static;
-    }
-
-    .lista-titulos, .imagem-titulos {
-        width: 100%;
     }
 }

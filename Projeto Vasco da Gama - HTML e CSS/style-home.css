@@ -1,11 +1,13 @@
 body {
     font-family: 'Markazi Text', serif;
     font-size: 23px;
+    width: auto;
 }
 
 header {
     background: #BBBBBB;
     padding: 20px 0;
+    width: auto;
 }
 
 .caixa {
@@ -248,8 +250,14 @@ td, th {
 }
 
 @media screen and (max-width: 480px) {
+
+    body {
+        width: 480px;
+    }
+
     .caixa, .principal, .conteudo-titulos, .mapa-conteudo, .video {
         width: auto;
+        height: 100%;
     }
 
     h1 {
@@ -260,7 +268,7 @@ td, th {
         position: static;
     }
 
-    .lista-titulos, .imagem-titulos {
+    .imagem-titulos {
         width: 100%;
     }
 }
